@@ -1,0 +1,84 @@
+
+/* FINSIGHT BATCH 11B - PRIORITY WORKSPACE */
+.prio-page{display:flex;flex-direction:column;gap:18px}
+.prio-header{
+  display:flex;gap:18px;align-items:center;padding:24px;
+  border-radius:16px;border:1px solid #56a4cb;
+  background:rgba(28,116,179,.16)
+}
+.prio-header>svg{color:#24d6cd;flex-shrink:0}
+.prio-header span{font-size:10px;letter-spacing:1.6px;color:#21cec5}
+.prio-header h2{font-size:25px;margin:7px 0}
+.prio-header p,.prio-info p,.prio-foot,
+.prio-card p{font-size:12px;line-height:1.7;color:#bcd4e7}
+.prio-metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.prio-metrics>div,.prio-card{
+  background:rgba(34,92,142,.20);border:1px solid #518abd;
+  border-radius:13px;padding:18px
+}
+.prio-metrics span,.prio-score span{
+  font-size:11px;color:#b9d1e6;display:block
+}
+.prio-metrics strong{display:block;font-size:26px;margin-top:9px}
+.prio-info{padding:16px;border:1px solid #3eaaa3;border-radius:12px}
+.prio-info strong{font-size:13px}
+.prio-info p{margin:8px 0}
+.prio-toolbar{display:flex;gap:9px;flex-wrap:wrap}
+.prio-toolbar button,.prio-plan{
+  display:inline-flex;align-items:center;justify-content:center;
+  gap:8px;padding:11px 14px;color:#fff;
+  border-radius:9px;border:1px solid #4fc5df;
+  background:linear-gradient(100deg,#1772ca,#09a1b3);
+  font-size:12px;font-weight:700;cursor:pointer
+}
+.prio-grid{display:grid;grid-template-columns:1fr 1fr;gap:17px}
+.prio-card-head{display:flex;justify-content:space-between;gap:15px}
+.prio-card small{color:#35d6c9;font-weight:800}
+.prio-card h3{font-size:18px;margin:9px 0}
+.prio-score{text-align:right}
+.prio-score strong{font-size:26px;display:block;margin-top:6px;color:#30ddc5}
+.prio-inputs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:18px 0}
+.prio-inputs label{font-size:11px;font-weight:650}
+.prio-inputs select,.prio-inputs input{
+  width:100%;min-width:0;display:block;margin-top:8px;
+  background:#173d60;color:#fff;border-radius:8px;
+  border:1px solid #508dbc;padding:10px;font-size:11px
+}
+.prio-action-text{
+  border-radius:11px;border:1px solid #4982a1;
+  background:rgba(20,83,117,.18);padding:15px;margin-bottom:17px
+}
+.prio-action-text strong{font-size:12px}
+.prio-action-text p{margin:5px 0 14px}
+.prio-plan{width:100%}
+.shell.theme-light .prio-header,
+.shell.theme-light .prio-metrics>div,
+.shell.theme-light .prio-card{
+  background:#eaf5ff;color:#143d60;border-color:#bdd7ed
+}
+.shell.theme-light .prio-header h2,
+.shell.theme-light .prio-card h3,
+.shell.theme-light .prio-metrics strong,
+.shell.theme-light .prio-action-text strong,
+.shell.theme-light .prio-info strong{color:#143d60}
+.shell.theme-light .prio-header p,
+.shell.theme-light .prio-info p,
+.shell.theme-light .prio-card p,
+.shell.theme-light .prio-foot,
+.shell.theme-light .prio-score span,
+.shell.theme-light .prio-metrics span{color:#4c7090}
+.shell.theme-light .prio-inputs input,
+.shell.theme-light .prio-inputs select{
+  background:#fff;color:#163d5b;border-color:#bdd7ed
+}
+.shell.theme-light .prio-score strong{color:#078a7b}
+.shell.theme-light .prio-action-text{
+  background:#e6f3fb;border-color:#bfd8e9
+}
+@media(max-width:1150px){
+  .prio-grid{grid-template-columns:1fr}
+  .prio-metrics{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:650px){
+  .prio-metrics,.prio-inputs{grid-template-columns:1fr}
+}

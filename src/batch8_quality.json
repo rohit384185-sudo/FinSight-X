@@ -1,0 +1,43 @@
+{
+  "source": "SQLite validation at local build time",
+  "synthetic": true,
+  "checks": [
+    {
+      "name": "Customer count reconciliation",
+      "passed": true,
+      "detail": "600 customers"
+    },
+    {
+      "name": "Transaction count reconciliation",
+      "passed": true,
+      "detail": "634 transactions"
+    },
+    {
+      "name": "Duplicate transaction identifiers",
+      "passed": true,
+      "detail": "0 duplicate entries"
+    },
+    {
+      "name": "Foreign-key integrity",
+      "passed": true,
+      "detail": "0 violations"
+    },
+    {
+      "name": "Customer and product references",
+      "passed": true,
+      "detail": "0 missing customers; 0 missing products"
+    },
+    {
+      "name": "Nonnegative financial amounts",
+      "passed": true,
+      "detail": "0 invalid records"
+    },
+    {
+      "name": "Transaction eligibility and timing",
+      "passed": true,
+      "detail": "0 transactions before eligibility / completion"
+    }
+  ],
+  "dateCoverage": "KYC date column available",
+  "invalidDates": 0
+}

@@ -1,0 +1,20 @@
+node_modules/
+dist/
+.env
+.env.*
+
+
+# FINSIGHT RELEASE HARDENING BATCH 13 RETRY
+node_modules/
+dist/
+backups/
+coverage/
+*.log
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+*service-account*.json
+.DS_Store

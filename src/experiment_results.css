@@ -1,0 +1,86 @@
+
+/* FINSIGHT EXPERIMENT RESULTS BATCH 10 */
+.erl-wrap {
+  margin:24px 0;padding:19px;
+  border:1px solid #3d9bd1;border-radius:15px;
+  background:rgba(20,74,115,.42)
+}
+.erl-heading {display:flex;justify-content:space-between;gap:12px}
+.erl-heading h3 {
+  display:flex;align-items:center;gap:9px;
+  margin:8px 0;font-size:18px
+}
+.erl-heading p,.erl-footnote {
+  font-size:11px;line-height:1.75;color:#bdd1e5
+}
+.erl-kicker {
+  color:#4ee7da;font-size:10px;
+  letter-spacing:1.4px;font-weight:800
+}
+.erl-warning {
+  display:flex;gap:10px;align-items:flex-start;
+  margin:15px 0;padding:12px;border:1px solid #be9953;
+  background:rgba(205,155,47,.12);border-radius:10px;
+  font-size:11px;line-height:1.65
+}
+.erl-warning svg {flex-shrink:0;color:#edbd56}
+.erl-fields {
+  display:grid;grid-template-columns:1fr 1fr;gap:10px
+}
+.erl-field {
+  display:flex;flex-direction:column;gap:7px;
+  font-size:11px;font-weight:650;margin:10px 0
+}
+.erl-field input,.erl-field select {
+  width:100%;min-width:0;padding:10px;
+  border-radius:9px;border:1px solid #639bc4;
+  background:#143652;color:#fff;font:inherit
+}
+.erl-results {
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:10px;margin-top:14px
+}
+.erl-results>div {
+  border:1px solid #468daf;background:#16466c80;
+  border-radius:10px;padding:13px
+}
+.erl-results span {display:block;font-size:11px;color:#bed7eb}
+.erl-results strong {
+  display:block;font-size:19px;margin-top:8px;
+  overflow-wrap:anywhere
+}
+.erl-findings {
+  border-top:1px solid #5384aa66;
+  margin-top:15px;padding-top:8px
+}
+.erl-findings p {font-size:11px;line-height:1.8}
+.erl-actions {display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}
+.erl-actions button {
+  display:inline-flex;align-items:center;gap:7px;
+  padding:10px;border:1px solid #3eaacb;border-radius:9px;
+  background:#17679b;color:#fff;font-weight:700;
+  font-size:11px;cursor:pointer
+}
+.erl-actions button:disabled {opacity:.45;cursor:not-allowed}
+.erl-actions .erl-reset {background:transparent}
+.erl-error {color:#ffb9a9;font-size:12px}
+.shell.theme-light .erl-wrap {
+  background:#eff8ff;border-color:#b6d6ee;color:#143d5f
+}
+.shell.theme-light .erl-field input,
+.shell.theme-light .erl-field select {
+  background:#fff;color:#143d5f;border-color:#b7d3e7
+}
+.shell.theme-light .erl-results>div {
+  background:#e1f1fb;border-color:#bfd8e9
+}
+.shell.theme-light .erl-results span,
+.shell.theme-light .erl-heading p,
+.shell.theme-light .erl-footnote {color:#52738e}
+.shell.theme-light .erl-kicker {color:#087f79}
+.shell.theme-light .erl-warning {
+  background:#fff5da;color:#694d20
+}
+@media(max-width:650px) {
+  .erl-fields,.erl-results {grid-template-columns:1fr}
+}

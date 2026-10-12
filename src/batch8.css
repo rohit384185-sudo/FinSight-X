@@ -1,0 +1,93 @@
+
+/* FINSIGHT TRUST & ACTIVATION BATCH 8 */
+.b8-workspace {display:flex;flex-direction:column;gap:20px}
+.b8-header {
+  display:flex;align-items:center;gap:18px;
+  border:1px solid #4d9fce;border-radius:17px;
+  background:rgba(37,120,175,.17);padding:23px;
+}
+.b8-header svg {color:#3de1e0;flex-shrink:0}
+.b8-header h2 {font-size:25px;margin:0 0 8px}
+.b8-header p,.b8-note {
+  font-size:12px;line-height:1.8;color:#bdd1e9;
+}
+.b8-header p {margin:0}
+.b8-metrics {
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:13px;
+}
+.b8-metrics>div {
+  border:1px solid #467cae;border-radius:14px;
+  background:rgba(36,77,119,.45);
+  padding:19px;min-width:0;
+}
+.b8-metrics span {
+  display:block;color:#bfd5ea;font-size:11px;
+}
+.b8-metrics strong {
+  display:block;font-size:26px;margin-top:12px;
+  overflow-wrap:anywhere;
+}
+.b8-panels {display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.b8-feature-stat {
+  display:flex;align-items:center;gap:14px;
+  flex-wrap:wrap;padding:20px 0;
+}
+.b8-feature-stat strong {font-size:27px;color:#41e9dc}
+.b8-feature-stat span {font-size:12px;color:#c1d9ed}
+.b8-button {
+  background:linear-gradient(100deg,#176bca,#06a4b5);
+  border:1px solid #53c4e6;border-radius:10px;
+  color:white;padding:12px 16px;
+  font-size:12px;font-weight:700;cursor:pointer;
+}
+.b8-quality-row {
+  display:flex;align-items:center;gap:18px;
+  padding:15px 0;border-bottom:1px solid #41658055;
+}
+.b8-quality-row strong,.b8-quality-row small {
+  display:block;font-size:12px;
+}
+.b8-quality-row small {color:#b8cfe4;margin-top:6px}
+.b8-pass,.b8-fail {
+  min-width:65px;text-align:center;font-size:10px;
+  font-weight:800;padding:7px;border-radius:8px;
+}
+.b8-pass {background:#106d5d;color:#d2fff6}
+.b8-fail {background:#853d3d;color:#fff0ee}
+.shell.theme-light .b8-header,
+.shell.theme-light .b8-metrics>div {
+  background:#eaf5ff;border-color:#bbd7ef;
+}
+.shell.theme-light .b8-header h2,
+.shell.theme-light .b8-metrics strong,
+.shell.theme-light .b8-quality-row strong {
+  color:#173b5d;
+}
+.shell.theme-light .b8-header p,
+.shell.theme-light .b8-note,
+.shell.theme-light .b8-metrics span,
+.shell.theme-light .b8-quality-row small,
+.shell.theme-light .b8-feature-stat span {
+  color:#476d8f;
+}
+.shell.theme-light .b8-feature-stat strong {color:#087f75}
+@media(max-width:1050px){
+  .b8-panels {grid-template-columns:1fr}
+  .b8-metrics {grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:650px){
+  .b8-metrics {grid-template-columns:1fr}
+}
+
+
+/* FINSIGHT NAVIGATION REPAIR BATCH 9A */
+.b8-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+}
+.b8-button svg {
+  flex-shrink: 0;
+}
